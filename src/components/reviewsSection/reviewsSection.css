@@ -1,0 +1,133 @@
+.reviews-section {
+  position: relative;
+  padding: 80px 20px;
+  background: url("/src/assets/backgrounds/bg2.png") no-repeat left top;
+  background-size: cover;
+}
+
+.reviews-section__container {
+  display: flex;
+
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* ======================== LEFT =========================== */
+
+.reviews-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #25324b;
+}
+
+.reviews-title span {
+  color: #3f6efb;
+}
+
+.reviews-subtitle {
+  margin: 20px 0 30px;
+  color: #515b6f;
+  line-height: 1.5;
+}
+
+.reviews-btn {
+  background: #5449ff;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+/* ======================== SWIPER =========================== */
+.reviews-right {
+  max-width: 778px;
+  width: 100%;
+}
+
+.reviews-swiper-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Swiper core */
+.swiper {
+  width: 100%;
+  height: auto;
+  padding-bottom: 60px;
+  overflow: visible;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Swiper slides */
+.review-slide {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.review-slide .review-card {
+  width: 100%;
+  max-width: 353px;
+}
+
+/* Pagination */
+.swiper-pagination {
+  position: absolute;
+  bottom: 0 !important;
+  left: 48% !important;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #d1d4e4;
+  opacity: 1;
+  margin: 0 !important;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4640de !important;
+}
+
+/* ======================== RESPONSIVE ======================== */
+
+@media (max-width: 992px) {
+  .reviews-section__container {
+    flex-direction: column;
+  }
+
+  .reviews-left {
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-section__container {
+    padding: 0 20px;
+  }
+
+  .swiper-pagination {
+    left: 40% !important;
+  }
+  .reviews-title {
+    font-size: 36px;
+  }
+}

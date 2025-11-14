@@ -1,0 +1,44 @@
+.gallery-calendar {
+  padding: 40px 0;
+}
+
+.gallery-calendar__container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 367px;
+  gap: 64px;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.gallery__item img {
+  max-width: 992px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .gallery-calendar__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .calendar-box {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-calendar__container {
+    padding: 0 20px;
+  }
+}
