@@ -1,16 +1,17 @@
 import React from "react";
 import "./footer.css";
 
+import footerLogo from "../../assets/logos/footer-logo.svg";
+import phoneBlueIcon from "../../assets/icons/phone-blue.svg";
+import emailIcon from "../../assets/icons/email.svg";
+import socialAllIcon from "../../assets/social/all.svg";
+
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__col footer__brand">
-          <img
-            src="/src/assets/logos/footer-logo.svg"
-            alt="Sprinters logo"
-            className="footer__logo"
-          />
+          <img src={footerLogo} alt="Sprinters logo" className="footer__logo" />
 
           <p className="footer__desc">
             Платформа пошуку перевізників та бронювання поїздок
@@ -73,12 +74,10 @@ export default function Footer() {
 
           <div className="footer__contacts">
             <p>
-              <img src="/src/assets/icons/phone-blue.svg" alt="phone" /> +38
-              (073) 555 55 55
+              <img src={phoneBlueIcon} alt="phone" /> +38 (073) 555 55 55
             </p>
             <p>
-              <img src="/src/assets/icons/email.svg" alt="email" />{" "}
-              gmail@gmail.com
+              <img src={emailIcon} alt="email" /> gmail@gmail.com
             </p>
           </div>
         </div>
@@ -90,7 +89,7 @@ export default function Footer() {
 
         <div className="footer__socials">
           <a href="#">
-            <img src="/src/assets/social/all.svg" alt="telegram" />
+            <img src={socialAllIcon} alt="telegram" />
           </a>
         </div>
       </div>

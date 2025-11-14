@@ -7,26 +7,31 @@ import "swiper/css/pagination";
 import ReviewCard from "../reviewCard/ReviewCard";
 import "./reviewsSection.css";
 
+import reviewerOne from "../../assets/avatars/person2.png";
+import reviewerTwo from "../../assets/avatars/person3.png";
+
+const REVIEWS = [
+  {
+    name: "Ben Yardley",
+    route: "Київ - Кишинів",
+    date: "1 May 2023",
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    img: reviewerOne,
+    rating: 5,
+  },
+  {
+    name: "Craig Martin",
+    route: "Львів - Париж",
+    date: "1 May 2023",
+    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.`,
+    img: reviewerTwo,
+    rating: 4,
+  },
+  // ще слайди при потребі
+];
+
 export default function ReviewsSection() {
-  const reviews = [
-    {
-      name: "Ben Yardley",
-      route: "Київ - Кишинів",
-      date: "1 May 2023",
-      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-      img: "/src/assets/avatars/person2.png",
-      rating: 5,
-    },
-    {
-      name: "Craig Martin",
-      route: "Львів - Париж",
-      date: "1 May 2023",
-      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.`,
-      img: "/src/assets/avatars/person3.png",
-      rating: 4,
-    },
-    // ще слайди при потребі
-  ];
+  const reviews = REVIEWS;
 
   return (
     <section className="reviews-section">

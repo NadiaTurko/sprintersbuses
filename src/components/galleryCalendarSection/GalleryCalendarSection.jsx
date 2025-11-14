@@ -2,12 +2,12 @@ import React from "react";
 import TripCalendar from "../tripCalendar/TripCalendar";
 import "./galleryCalendarSection.css";
 
+import busImageOne from "../../assets/buses/img1.png";
+import busImageTwo from "../../assets/buses/img2.png";
+import busImageThree from "../../assets/buses/img3.png";
+
 export default function GalleryCalendarSection() {
-  const galleryImages = [
-    "/src/assets/buses/img1.png",
-    "/src/assets/buses/img2.png",
-    "/src/assets/buses/img3.png",
-  ];
+  const galleryImages = [busImageOne, busImageTwo, busImageThree];
 
   return (
     <section className="gallery-calendar">

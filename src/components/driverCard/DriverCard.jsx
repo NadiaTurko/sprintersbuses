@@ -1,6 +1,9 @@
 import React from "react";
 import "./driverCard.css";
 
+import instagramIcon from "../../assets/social/insta.svg";
+import linkedinIcon from "../../assets/social/linkedin.svg";
+
 export default function DriverCard({ name, exp, img }) {
   return (
     <div className="driver-card">
@@ -11,10 +14,10 @@ export default function DriverCard({ name, exp, img }) {
 
       <div className="driver-card__icons">
         <a href="#">
-          <img src="/src/assets/social/insta.svg" alt="instagram" />
+          <img src={instagramIcon} alt="instagram" />
         </a>
         <a href="#">
-          <img src="/src/assets/social/linkedin.svg" alt="linkedin" />
+          <img src={linkedinIcon} alt="linkedin" />
         </a>
       </div>
     </div>

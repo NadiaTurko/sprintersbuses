@@ -3,6 +3,8 @@ import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 import "./tripCalendar.css";
 
+import plusIcon from "../../assets/icons/plus.svg";
+
 export default function TripCalendar() {
   const [selected, setSelected] = useState();
 
@@ -11,7 +13,7 @@ export default function TripCalendar() {
       <h2 className="calendar-title">Календар поїздок</h2>
 
       <button className="calendar-buy">
-        <img src="/src/assets/icons/plus.svg" alt="" />
+        <img src={plusIcon} alt="" />
         Купити квиток
       </button>
 

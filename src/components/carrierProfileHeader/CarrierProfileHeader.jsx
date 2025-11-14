@@ -1,6 +1,15 @@
 import React from "react";
 import "./carrierProfileHeader.css";
 
+import busLogo from "../../assets/logos/bus-logo.png";
+import planetIcon from "../../assets/icons/planet.svg";
+import phoneIcon from "../../assets/icons/phone.svg";
+import fireIcon from "../../assets/icons/fire.svg";
+import peopleIcon from "../../assets/icons/people.svg";
+import trainIcon from "../../assets/icons/train.svg";
+import locationIcon from "../../assets/icons/location.svg";
+import townIcon from "../../assets/icons/town.svg";
+
 export default function CarrierProfileHeader() {
   return (
     <section className="carrier-header">
@@ -15,7 +24,7 @@ export default function CarrierProfileHeader() {
         {/* LEFT SIDE */}
         <div className="carrier-header__left">
           <div className="carrier-header__logo">
-            <img src="/src/assets/logos/bus-logo.png" alt="carrier logo" />
+            <img src={busLogo} alt="carrier logo" />
           </div>
 
           <div className="carrier-header__info">
@@ -26,12 +35,12 @@ export default function CarrierProfileHeader() {
 
             <div className="carrier-header__links">
               <a href="" className="carrier-header__link">
-                <img src="/src/assets/icons/planet.svg" alt="" />
+                <img src={planetIcon} alt="" />
                 https://stripe.com
               </a>
 
               <a href="tel:+380735555555" className="carrier-header__link">
-                <img src="/src/assets/icons/phone.svg" alt="" />
+                <img src={phoneIcon} alt="" />
                 +38 (073) 555 55 55
               </a>
             </div>
@@ -39,7 +48,7 @@ export default function CarrierProfileHeader() {
             <div className="carrier-header__stats">
               <div className="stat-item">
                 <div className="stat-item__img">
-                  <img src="/src/assets/icons/fire.svg" alt="fire-icon" />
+                  <img src={fireIcon} alt="fire-icon" />
                 </div>
                 <div className="stat-item__block">
                   <span className="stat-item__label">На ринку від:</span>
@@ -49,7 +58,7 @@ export default function CarrierProfileHeader() {
 
               <div className="stat-item">
                 <div className="stat-item__img">
-                  <img src="/src/assets/icons/people.svg" alt="people-icon" />
+                  <img src={peopleIcon} alt="people-icon" />
                 </div>
                 <div className="stat-item__block">
                   <span className="stat-item__label">
@@ -61,7 +70,7 @@ export default function CarrierProfileHeader() {
 
               <div className="stat-item">
                 <div className="stat-item__img">
-                  <img src="/src/assets/icons/train.svg" alt="train-icon" />
+                  <img src={trainIcon} alt="train-icon" />
                 </div>
                 <div className="stat-item__block">
                   <span className="stat-item__label">Автопарк</span>
@@ -71,10 +80,7 @@ export default function CarrierProfileHeader() {
 
               <div className="stat-item">
                 <div className="stat-item__img">
-                  <img
-                    src="/src/assets/icons/location.svg"
-                    alt="location-icon"
-                  />
+                  <img src={locationIcon} alt="location-icon" />
                 </div>
                 <div className="stat-item__block">
                   <span className="stat-item__label">Обслуговуємо</span>
@@ -84,7 +90,7 @@ export default function CarrierProfileHeader() {
 
               <div className="stat-item">
                 <div className="stat-item__img">
-                  <img src="/src/assets/icons/town.svg" alt="town-icon" />
+                  <img src={townIcon} alt="town-icon" />
                 </div>
                 <div className="stat-item__block">
                   <span className="stat-item__label">Місто</span>

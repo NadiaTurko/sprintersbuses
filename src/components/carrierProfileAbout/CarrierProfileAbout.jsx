@@ -1,6 +1,23 @@
 import React from "react";
 import "./carrierProfileAbout.css";
 
+import twitterIcon from "../../assets/social/z.svg";
+import facebookIcon from "../../assets/social/facebook.svg";
+import franceFlag from "../../assets/countries/france.png";
+import italyFlag from "../../assets/countries/italy.png";
+import germanyFlag from "../../assets/countries/germany.png";
+import netherlandsFlag from "../../assets/countries/netherlands.png";
+import spainFlag from "../../assets/countries/spain.png";
+import arrowIcon from "../../assets/icons/Icon.svg";
+
+const COUNTRIES = [
+  { icon: franceFlag, name: "Франція" },
+  { icon: italyFlag, name: "Італія" },
+  { icon: germanyFlag, name: "Німеччина" },
+  { icon: netherlandsFlag, name: "Нідерланди" },
+  { icon: spainFlag, name: "Іспанія" },
+];
+
 export default function CarrierProfileAbout() {
   return (
     <section className="carrier-content">
@@ -30,12 +47,12 @@ export default function CarrierProfileAbout() {
 
             <div className="carrier-social__links">
               <a href="#" className="social-link">
-                <img src="/src/assets/social/z.svg" alt="" />
+                <img src={twitterIcon} alt="" />
                 twitter.com/stripe
               </a>
 
               <a href="#" className="social-link">
-                <img src="/src/assets/social/facebook.svg" alt="" />
+                <img src={facebookIcon} alt="" />
                 facebook.com/StripeHQ
               </a>
             </div>
@@ -48,22 +65,16 @@ export default function CarrierProfileAbout() {
             <h2 className="carrier-title">Обслуговуємо країни</h2>
 
             <ul className="countries-list">
-              {[
-                ["france.png", "Франція"],
-                ["italy.png", "Італія"],
-                ["germany.png", "Німеччина"],
-                ["netherlands.png", "Нідерланди"],
-                ["spain.png", "Іспанія"],
-              ].map(([icon, name], i) => (
+              {COUNTRIES.map(({ icon, name }, i) => (
                 <li className="country-item" key={i}>
-                  <img src={`/src/assets/countries/${icon}`} alt="" />
+                  <img src={icon} alt="" />
                   <span>{name}</span>
                 </li>
               ))}
             </ul>
 
             <button className="countries-toggle">
-              Усі країни <img src="/src/assets/icons/Icon.svg" alt="" />
+              Усі країни <img src={arrowIcon} alt="" />
             </button>
           </div>
         </div>

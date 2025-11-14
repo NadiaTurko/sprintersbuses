@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import "./reviewCard.css";
 
-const STAR_ICON = "/src/assets/icons/star.svg";
+import starIcon from "../../assets/icons/star.svg";
 
 export default function ReviewCard({ name, route, date, text, img, rating }) {
   const stars = useMemo(
@@ -28,7 +28,7 @@ export default function ReviewCard({ name, route, date, text, img, rating }) {
         aria-label={`Рейтинг: ${rating} зірок`}
       >
         {stars.map((index) => (
-          <img key={index} src={STAR_ICON} alt="" aria-hidden="true" />
+          <img key={index} src={starIcon} alt="" aria-hidden="true" />
         ))}
       </div>
     </div>

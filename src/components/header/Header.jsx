@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./header.css";
 
+import headerLogo from "../../assets/logos/logo.png";
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,7 +12,7 @@ export default function Header() {
         {/* LEFT */}
         <div className="header__left">
           <div className="header__logo">
-            <img src="/src/assets/logos/logo.png" alt="logo" />
+            <img src={headerLogo} alt="logo" />
           </div>
 
           {/* BURGER BUTTON */}

@@ -1,7 +1,7 @@
 .reviews-section {
   position: relative;
   padding: 80px 20px;
-  background: url("/src/assets/backgrounds/bg2.png") no-repeat left top;
+  background: url("../../assets/backgrounds/bg2.png") no-repeat left top;
   background-size: cover;
 }
 
